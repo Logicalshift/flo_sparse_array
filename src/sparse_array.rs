@@ -37,9 +37,7 @@ impl<TTarget> SparseBucket<TTarget> {
 }
 
 ///
-/// Sparse array indexed by usize
-///
-/// We assume these are allocated from 0, and tend to cluster
+/// Sparse array indexed by usize, implemented using the Cuckoo hash algorithm
 ///
 pub struct SparseArray<TTarget> {
     /// Size of the hash array, as a power of 2
