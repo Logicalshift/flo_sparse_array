@@ -58,7 +58,7 @@ fn criterion_benchmark(c: &mut Criterion) {
         }
     }));
 
-    c.bench_function("insert_overwrite_sparse_array_100k", |b| b.iter(|| {
+    c.bench_function("update_sparse_array_100k", |b| b.iter(|| {
         for p in 0..100000usize {
             (*sparse_array_100k.get_mut(p).unwrap()) = p;
         }

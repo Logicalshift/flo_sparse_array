@@ -61,7 +61,7 @@ insert_overwrite_sparse_array_100k
 Benchmarking update_hashmap_100k: Collecting 100 samples in estimated 5.1938 s (
 update_hashmap_100k     time:   [2.9770 ms 3.2273 ms 3.4757 ms]
 
-Benchmarking insert_overwrite_sparse_array_100k #2: Collecting 100 samples in es
+Benchmarking update_sparse_array_100k #2: Collecting 100 samples in es
 insert_overwrite_sparse_array_100k #2
                         time:   [258.76 µs 259.54 µs 260.43 µs]
 Found 4 outliers among 100 measurements (4.00%)
