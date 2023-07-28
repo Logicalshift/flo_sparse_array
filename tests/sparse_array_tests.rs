@@ -25,6 +25,23 @@ fn fill_100k_entries() {
 }
 
 #[test]
+fn fill_10m_entries() {
+    let mut array = SparseArray::<usize>::empty();
+
+    for p in 0..10000000 {
+        array.insert(p, p);
+
+        assert!(array.get(p) == Some(&p), "Insert: {:?} == {:?}", p, array.get(p));
+    }
+
+    array.check_hash_values();
+
+    for p in 0..10000000 {
+        assert!(array.get(p) == Some(&p), "Read: {:?} == {:?}", p, array.get(p));
+    }
+}
+
+#[test]
 fn retrieve_something() {
     let mut array = SparseArray::<usize>::empty();
 
