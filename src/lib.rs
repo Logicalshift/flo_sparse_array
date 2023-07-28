@@ -1,11 +1,11 @@
 //! # flo_sparse_array
 //! 
-//! ```Rust
+//! ```
 //! use flo_sparse_array::*;
 //! 
 //! let mut sparse_array = SparseArray::empty();
 //! sparse_array.insert(12345, "Test");
-//! assert!(sparse_array.get(12345) == "Test");
+//! assert!(sparse_array.get(12345) == Some(&"Test"));
 //! ```
 //! 
 //! This crate provides an implementation of a simple sparse array type. This is a specialised type of hash table that
