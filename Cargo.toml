@@ -1,0 +1,21 @@
+[package]
+name        = "flo_sparse_array"
+version     = "0.1.0"
+authors     = ["Andrew Hunter"]
+license     = "Apache-2.0"
+edition     = "2021"
+readme      = "README.md"
+categories  = [ "algorithms" ]
+repository  = "https://github.com/Logicalshift/flo_sparse_array"
+description = "Sparse array data type: a fast map between usize values and data"
+
+[dependencies]
+rand        = "0.8"
+
+[dev-dependencies]
+criterion   = "0.5"
+
+[[bench]]
+name        = "vs_hashmap"
+path        = "benches/vs_hashmap.rs"
+harness     = false
