@@ -5,7 +5,7 @@ authors     = ["Andrew Hunter"]
 license     = "Apache-2.0"
 edition     = "2021"
 readme      = "README.md"
-categories  = [ "algorithms" ]
+categories  = [ "algorithms", "data-structures" ]
 repository  = "https://github.com/Logicalshift/flo_sparse_array"
 description = "Sparse array data type: a fast map between usize values and data"
 
